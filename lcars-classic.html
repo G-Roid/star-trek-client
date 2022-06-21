@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>LCARS - Alien Database</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="date=no">
@@ -81,21 +81,46 @@
 
 			<!-- Start your content here. -->
 
-			<h1>Hello</h1>
-			
-			<h2>Welcome to LCARS &#149; Classic Theme</h2>
+			<h1>Federation Field Guide to Aliens</h1>
+						
+			<h2>Enter the name of an alien species below</h2>
+
 
 			<p>Live long and prosper.</p>
-			
-			<input type="text" id='searchInput'>
-			<div class="buttons">
-				<a id='searchButton'>Search</a>
+			<div>
+				<label for="alien-select">Choose a species:</label>
+
+				<select name="aliens" id="alienSelect">
+					<option value="">--Please choose an option--</option>
+					<!-- <option value="dog">Dog</option>
+					<option value="cat">Cat</option>
+					<option value="hamster">Hamster</option>
+					<option value="parrot">Parrot</option>
+					<option value="spider">Spider</option>
+					<option value="goldfish">Goldfish</option> -->
+				</select>
 			</div>
 
-			<ul class="lcars-list">
-				<li></li>
-				<li></li>
-			</ul>
+
+			
+			<!-- <input type="input" id='searchInput'> -->
+			<div class="buttons">
+				<a id='searchButton'>search</a>
+			</div>
+							
+			<div class="pics-right">
+				<img src=""  id="alienImage">
+			  </div>
+			<div>
+				<ul class="lcars-list">
+					<li><span>Species Name: </span><span id='speciesName'></span></li>
+					<li><span>Homeworld: </span><span id='homeworld'></span></li>
+					<li><spa0n>Key Features: </span><span id='features'></span></li>
+					<li><span>Interesting Facts: </span><span id='interestingFact'></span></li>
+					<li><span>Notable Examples: </span><span id='notableExamples'></span></li>
+				</ul>
+	
+			</div>
 			
 			 <!-- End content area. -->
 
